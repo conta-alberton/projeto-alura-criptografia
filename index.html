@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    
+    <header>
+        <span title="Clique aqui para acessar a página da Alura">
+            <a href="https://www.alura.com.br/" target="_blank">
+        <img class="alura" src="/imagem/logoAlura.png" alt="Logo da Alura">
+            </a>
+        </span>
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="digite sua mensagem" autofocus></textarea>
+            <div class="informacao">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensagem" cols="20" rows="10" required></textarea> 
+            <button class="btn-copiar" onclick="btnCopiarTexto()">Copiar</button>
+            <button class="btn-limpar" onclick="btnLimparTexto()">Limpar</button>
+        </section>
+    </main>
+
+    <footer>
+            <a class="autor" href="https://www.instagram.com/conta_alberton/" target="_blank"> Desenvolvido por: Rafael A. B. </a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
